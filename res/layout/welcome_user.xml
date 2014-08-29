@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 
+    <ListView
+        android:id="@+id/contact_list"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </ListView>
+    -->
+    
+	 <TextView
+      android:id="@+id/textViewWelcome"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="1dp"
+      android:text="@string/welcome"
+      android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	 <LinearLayout
+	     android:layout_width="match_parent"
+	     android:layout_height="225dp"
+	     android:orientation="vertical" >
+
+
+
+	     		<ListView
+	     		    android:id="@+id/list"
+	     		    android:layout_width="wrap_content"
+	     		    android:layout_height="match_parent" >
+	     		    android:choiceMode="singleChoice">
+
+	     		</ListView>
+		
+	 </LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+	    <Button
+	        android:id="@+id/button1"
+	        android:layout_width="101dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="5dp"
+	        android:onClick="addContact"
+	        android:textSize="15sp"
+	        android:text="@string/add_contact" />
+
+	    <Button
+	        android:id="@+id/button2"
+	        android:layout_width="95dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="5dp"
+	        android:textSize="15sp"
+	        android:onClick="editContactCopy"
+	        android:text="@string/edit_contact" />
+
+	    <Button
+	        android:id="@+id/button3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="5dp"
+	        android:textSize="15sp"
+	        android:onClick="removeAccount"
+	        android:text="@string/remove_contact" />
+
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="57dp"
+	    android:gravity="center_horizontal" >
+
+	    <Button
+	        android:id="@+id/button4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="5dp"
+	        android:onClick="logOut"
+	        android:text="@string/log_out" />
+	</LinearLayout>
+       
+</LinearLayout>
